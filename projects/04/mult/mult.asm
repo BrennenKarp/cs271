@@ -10,13 +10,13 @@
 
 @R1
 D = M
-@count
+@counter
 M = D
 @R2
 M = 0
 
 (LOOP)
-@count
+@counter
 D = M
 @END
 D; JEQ
@@ -24,7 +24,7 @@ D; JEQ
 D = M
 @R2
 M = D + M
-@count
+@counter
 M = M - 1
 @LOOP
 0; JMP
